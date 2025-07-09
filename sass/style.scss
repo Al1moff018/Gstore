@@ -473,3 +473,75 @@ section {
     height: 16px;
   }
 }
+.subscribe {
+  background: url("background-image.png") center/cover no-repeat;
+  min-height: 100vh;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__overlay {
+    width: 1216px;
+    background: url(../images/input-section-bg.png) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 81px ;
+    border-radius: 32px;
+    height: 334px;
+  }
+
+  &__container {
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+
+    & > * {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  &__desc {
+    font-size: 1.2rem;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .subscribe__input {
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      width: 300px;
+    }
+
+    .subscribe__button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #0f172a;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1e293b;
+      }
+    }
+  }
+
+  &__note {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+}
