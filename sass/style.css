@@ -724,10 +724,65 @@ section .container {
 .product-images {
   display: flex;
   gap: 12px;
+  margin-top: 16px;
 }
 
 .comment-card-img {
   width: 104px;
   height: 128px;
   border-radius: 16px;
+}
+
+footer {
+  background-color: #0F172A;
+  color: #64748B;
+  margin-top: 56px;
+}
+footer .footer-top {
+  display: flex;
+  padding-block: 53px 56px;
+  align-items: start;
+  gap: 32px;
+}
+footer .gstore-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: #64748B;
+  padding-top: 24px;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .foter-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  color: #fff;
+}
+footer .footer-links-box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+footer .footer-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  text-decoration: none;
+  color: #64748B;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+  padding-block: 16px;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom .footer-bottom-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
 }/*# sourceMappingURL=style.css.map */
