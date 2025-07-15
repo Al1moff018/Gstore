@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
+    <div class="wrapper">
     <header class="header">
             <div class="header-info">
                 <div class="container">
@@ -34,15 +35,19 @@
             </div>
         <div class="container">
             <div class="header-top">
-                <a href="korzina.html">
-                <img src="images/logo.svg" alt="logo">
-            </a>
-          <div class="header-top-center">
-                <a class="header__catalog-link" href="#!">Каталог <img src="images/icons/menu-icon.svg" alt="menu-icon"></a>
-                <div class="search-box">
-                    <input type="search" class="header__search" placeholder="Найти">
-                    <img class="search-icon" src="images/icons/search-icon.svg" alt="search">
+                <div class="header-right">        
+                    <a href="korzina.html">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header-center">
+                    <a class="header__catalog-link" href="#!">Каталог <img src="images/icons/menu-icon.svg" alt="menu-icon"></a>
+                    <div class="search-box">
+                        <input type="search" class="header__search" placeholder="Найти">
+                        <img class="search-icon" src="images/icons/search-icon.svg" alt="search">
+                    </div>
                 </div>
+                </div>
+          <div class="header-top-center">
                 <div class="header-top-right">
                     <button class="header-top-right__button lighter">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,16 +167,80 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="korzina-section">
             <div class="container">
-                <div class="korzina-box">
-                    <h1 class="korzina-title">Корзина пуста</h1>
-                    <p class="korzina-info">Специальные предложения ждут вас на главной. Это поможет вам выбрать подходящие товары.</p>
-                    <a class="header__catalog-link" href="index.html">На главную <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.57613 2.90913C5.81044 2.67482 6.19034 2.67482 6.42465 2.90913L11.0913 7.5758C11.3256 7.81012 11.3256 8.19001 11.0913 8.42433L6.42465 13.091C6.19034 13.3253 5.81044 13.3253 5.57613 13.091C5.34181 12.8567 5.34181 12.4768 5.57613 12.2425L9.81853 8.00006L5.57613 3.75766C5.34181 3.52335 5.34181 3.14345 5.57613 2.90913Z" fill="white"/>
-</svg>
-</a>
-                </div>
+                <h1 class="title">Корзина</h1>
+    <div class="cart-layout">
+      <div class="cart-items">
+        <!-- Cart Item -->
+        <div class="cart-item">
+          <img src="images/iphone-img.png" alt="iPhone 15 Pro" />
+          <div class="item-info">
+            <h2>iPhone 15 Pro 256GB Natural Titanium</h2>
+            <div class="details">
+              <span>Артикул: 28560</span>
+              <span>Цвет: Голубой</span>
+              <span>Наличие: 12 шт.</span>
+            </div>
+            <p class="warranty"> +1 год гарантии (+4 000 ₽ ~ 40 USDT)</p>
+          </div>
+          <div class="item-price">
+            <span class="old-price">179 900 ₽</span>
+            <span class="price">145 900 ₽</span>
+            <span class="usd">560 $</span>
+            <div class="counter">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ikkinchi mahsulot (bir xil) -->
+        <div class="cart-item">
+          <img src="images/iphone-img.png" alt="iPhone 15 Pro" />
+          <div class="item-info">
+            <h2>iPhone 15 Pro 256GB Natural Titanium</h2>
+            <div class="details">
+              <span>Артикул: 28560</span>
+              <span>Цвет: Голубой</span>
+              <span>Наличие: 12 шт.</span>
+            </div>
+            <p class="warranty">+1 год гарантии (+4 000 ₽ ~ 40 USDT)</p>
+          </div>
+          <div class="item-price">
+            <span class="old-price">179 900 ₽</span>
+            <span class="price">145 900 ₽</span>
+            <span class="usd">560 $</span>
+            <div class="counter">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chegirmalar bloki -->
+      <div class="cart-summary">
+        <div class="summary-box">
+          <h2>Стоимость</h2>
+          <p><span>Товары, 3 шт.</span><span>291 800 ₽</span></p>
+          <p><span></span><span>2 900 $</span></p>
+          <p class="discount"><span>Промокод</span><span>−16 700 ₽</span></p>
+          <h3><span>К оплате</span><span>275 100 ₽</span></h3>
+          <p><span></span><span>2 750 $</span></p>
+          <button class="checkout">К оформлению</button>
+          <p class="delivery-note">
+            Доступные способы и время доставки можно выбрать при оформлении заказа
+          </p>
+        </div>
+        <div class="promo-code">
+          <input type="text" placeholder="Промокод" />
+          <button>Применить</button>
+        </div>
+      </div>
+    </div>
             </div>
         </section>
     </main>
@@ -254,5 +323,6 @@
             </div>
         </div>
     </footer>
+    </div>
 </body>
 </html>
