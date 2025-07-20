@@ -1620,7 +1620,7 @@ button {
 .swiper.bottom-swiper{
   position: relative;
   overflow: visible;
-  .swiper-button-next{
+  .next.btn{
     position: absolute;
     top: -53px !important;
     right: 134px ;
@@ -1628,7 +1628,7 @@ button {
       width: 44px !important;
       height: 44px !important;
   }
-  .swiper-button-prev{
+  .prev.btn{
     position: absolute;
     top: -53px !important;
     right: 184px;
@@ -2503,4 +2503,20 @@ button {
       width: 100%;
       display: none;
     }
+}
+.swiper-title-right{
+  display: flex;
+}
+.swiper-btn-icon{
+  width: 44px;
+  height: 44px;
+  background-color: #F1F5F9;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 14px;
+}
+@media (max-width:400px){
+  .product-info-button{
+    display: none;
+  }
 }

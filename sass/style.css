@@ -2445,3 +2445,22 @@ button {
   }
 }
 }/*# sourceMappingURL=style.css.map */
+.swiper-title-right{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.swiper-btn-icon{
+  width: 44px;
+  height: 44px;
+  background-color: #F1F5F9;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+}
+@media (max-width:400px){
+  .product-info-button{
+    display: none;
+  }
+}
