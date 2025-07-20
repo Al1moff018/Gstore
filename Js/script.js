@@ -11,7 +11,7 @@
       },
     });
     var swiper = new Swiper(".center-swiper", {
-      slidesPerView: 2.6,
+      slidesPerView: 4,
       spaceBetween: 16,
       freeMode: true,
       pagination: {
@@ -20,7 +20,7 @@
       },
     });
     var swiper = new Swiper(".bottom-swiper", {
-      slidesPerView: 2.4,
+      slidesPerView: 3,
       spaceBetween: 20,
       freeMode: true,
       pagination: {
