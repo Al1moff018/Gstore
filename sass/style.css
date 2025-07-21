@@ -406,7 +406,7 @@ section .container {
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  /* gap: 32px; */
+  gap: 32px;
   overflow: hidden;
 }
 .products .product-content {
@@ -862,7 +862,7 @@ footer .footer-link {
 .products.all-products {
   margin-top: 0;
   display: grid;
-  grid-template-columns: repeat(minmax, auto-fit(250px 1fr)) !important;
+  grid-template-columns: repeat(minmax, auto-fit(164px 1fr));
   row-gap: 32px;
   -moz-column-gap: 32px;
        column-gap: 32px;
@@ -1359,7 +1359,9 @@ button {
   align-items: center;
   justify-content: center;
 }
-
+.product{
+  width: 280px;
+}
 .header-right {
   display: flex;
   gap: 36px;
@@ -1393,6 +1395,9 @@ button {
   }
   .header-top-right {
     display: none !important;
+  }
+  .products.all-products{
+
   }
   .all-products-left {
     display: none;
@@ -1443,7 +1448,7 @@ button {
     justify-content: center;
   }
   .product {
-    width: calc(50% - 16px);
+    width: 280px;
   }
   /* Footer adjustments */
   .footer-top {
@@ -2295,6 +2300,7 @@ button {
   .korzina-right .korzina-right-top,
   .korzina-right .korzina-right-bottom {
     width: 100%;
+    height: auto;
   }
   .korzina-right .registration-btn {
     width: 100%;
@@ -2306,9 +2312,10 @@ button {
   }
   .products {
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
   .products.all-products {
-    grid-template-columns: repeat(minmax, auto-fit(280px, 1fr));
+    grid-template-columns: repeat(minmax, auto-fit(164px 1fr));
   }
   @media (max-width:620px){
   .product-info-button{
@@ -2460,7 +2467,46 @@ button {
   cursor: pointer;
 }
 @media (max-width:400px){
-  .product-info-button{
+  .product-info-button.sale{
     display: none;
+  }
+}
+@media (max-width:385px){
+  .product{
+    width: 164px;
+  }
+  .product-info-button{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 110.00000000000001%;
+  }
+  .container{
+    width: calc(100% - 32px);
+  }
+  .title{
+    font-weight: 500;
+    font-size: 20px !important;
+    line-height: 110.00000000000001%;
+  }
+  .swiper-prev-btn,
+  .swiper-next-btn{
+    display: none;  
+  }
+  .all-products-btn{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110.00000000000001%;
+  }
+  .title-box{
+    align-items: center;
+  }
+  .input-box{
+    flex-direction: column;
+  }
+  .pcode-input{
+    width:100% !important;
+  }
+  .input-send{
+    width:100% !important;
   }
 }
