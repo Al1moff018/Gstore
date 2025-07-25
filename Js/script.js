@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       // When window width is >= 1200px
       1200: {
-        slidesPerView: 3,
-        spaceBetween: 40,
+        slidesPerView: 4,
+        spaceBetween: 16,
         centeredSlides: false
-      }
+      },
     }
   });
 });

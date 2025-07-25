@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":"sass --watch sass/style.scss css/style.css"
+    "sass": "sass --watch sass/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
     "url": "https://github.com/Al1moff018/Gstore/issues"
   },
   "homepage": "https://github.com/Al1moff018/Gstore#readme",
-  "description": "my web site"
+  "description": "my web site",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
 }

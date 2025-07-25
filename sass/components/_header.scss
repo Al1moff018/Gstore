@@ -1,0 +1,232 @@
+/* Header Styles */
+.header {
+  &-info {
+    padding-block: 9px;
+    background-color: #F1F5F9;
+    margin-bottom: 16px;
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &-left, &-right {
+      display: flex;
+      gap: 32px;
+    }
+  }
+  
+  &-city-btn {
+    font-size: 14px;
+    line-height: 110%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  &__catalog-link {
+    background-color: #0F172A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: white;
+    padding: 15px 22px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+  }
+  
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    &-right__button {
+      padding: 15px 17px;
+      border-radius: 12px;
+      background-color: #F1F5F9;
+      transition: all .3s;
+      position: relative;
+      width: 50px;
+      height: 53px;
+      &:hover {
+        background-color: #0F172A;
+        
+        svg path {
+          fill: white;
+        }
+        
+        .lighter-btn-hover {
+          opacity: 1;
+          left: -19px;
+          bottom: -37px;
+          transform: translate(0);
+        }
+        
+        .profile-configuration {
+          opacity: 1;
+          bottom: -100px;
+          transform: translate(0);
+          right: 0;
+        }
+      }
+    }
+  }
+  
+  .search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 348px;
+    height: 48px;
+    
+    .search-icon {
+      position: absolute;
+      right: 16px;
+      top: 14px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/search-icon.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  &__search {
+    outline: none;
+    justify-content: space-between;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 16px;
+    background-color: #F1F5F9;
+    
+    &::placeholder {
+      color: #64748B;
+    }
+    
+    &::-moz-placeholder {
+      color: #64748B;
+    }
+  }
+  
+  .tab-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    
+    .tab-list-item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 110%;
+      letter-spacing: 0%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #E2E8F0;
+      padding: 4px 9px 4px 20px;
+      border-radius: 900px;
+    }
+  }
+}
+.header-right{
+  display: flex;
+  gap: 36px;
+}
+  .header__search{
+    width: 100% !important;
+  }
+.lighter-btn-hover {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  text-align: center;
+  border-radius: 12px;
+  gap: 10px;
+  right: 0;
+  padding: 8px 12px;
+  background-color: #0F172A;
+  color: #fff;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .1s;
+  transform: translate(1000px);
+}
+
+.profile-configuration {
+  position: absolute;
+  text-align: start;
+  transition: all .2s;
+  bottom: -170px;
+  z-index: 100;
+  background-color: #fff;
+  opacity: 0;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0.12px 2.69px 7.41px 0px #33415509, 0.56px 12.7px 28.99px 0px #3341550E, 1.46px 32.97px 91px 0px #33415517;
+  transform: translate(1000px);
+  
+  .header__catalog-link {
+    white-space: nowrap;
+  }
+  
+  &.korzina {
+    bottom: -440px;
+    position: relative;
+  }
+  
+  .profile-hover-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    margin-bottom: 12px;
+  }
+  
+  .profile-hover-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    width: 210px;
+  }
+  
+  .product-status {
+    color: #0F172A;
+  }
+}
+
+.korzina-3-icon {
+  position: absolute;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 110%;
+  text-align: center;
+  background-color: #22D3EE;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  top: 4px;
+  right: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.header-center {
+      display: flex !important;
+      align-items: center;
+      flex-direction: row !important;
+      gap: 12px;
+}

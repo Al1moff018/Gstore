@@ -1,0 +1,44 @@
+/* Feedback Section */
+.feedback-section {
+  .container {
+    display: flex;
+    gap: 32px;
+    margin-top: 80px;
+  }
+}
+
+.feedback-card {
+  display: flex;
+  align-items: end;
+  background: url("../images/feedback-bg.png") no-repeat;
+  background-size: cover;
+  padding: 32px;
+  border-radius: 32px;
+  width: 592px;
+  color: #fff;
+  
+  .feedback-info {
+    width: 337px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110%;
+    overflow: hidden;
+  }
+}
+
+.show-more {
+  display: flex;
+  text-decoration: none;
+  color: #0F172A;
+  gap: 8px;
+  background-color: #F1F5F9;
+  border-radius: 12px;
+  padding: 14px 16px;
+  width: 129px;
+  
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+

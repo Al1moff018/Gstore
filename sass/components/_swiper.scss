@@ -1,0 +1,169 @@
+/* Slider Styles */
+.swiper {
+  &-pagination-bullet {
+    width: 24px;
+    height: 2px;
+    border-radius: 900px;
+    opacity: 0.4;
+    
+    &-active {
+      opacity: 1;
+      background-color: #fff;
+    }
+  }
+  
+  &-pagination {
+    position: absolute;
+    bottom: 17px;
+    left: 32px;
+    right: unset;
+    width: fit-content;
+  }
+  
+  &.first-swiper {
+    background: url("../images/left-slider-bg.png") no-repeat;
+    height: 334px;
+    width: 800px;
+    background-size: cover;
+    border-radius: 32px;
+    opacity: 1;
+    margin-top: 32px;
+    position: relative;
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 40px;
+    white-space: nowrap;
+    line-height: 110%;
+    color: #fff !important;
+    margin-bottom: 12px;
+  }
+  .swiper-title.second{
+      font-weight: 500;
+      font-size: 25px;
+      white-space: nowrap;
+      line-height: 110%;
+      color: #fff;
+      margin-bottom: 12px;
+  }
+  &.second-swiper {
+    background: radial-gradient(89.28% 98.65% at 77.86% 13.62%, #FDC830 0%, #F37335 100%);
+    overflow-x: hidden;
+    height: 334px;
+    width: 384px;
+    border-radius: 32px;
+    opacity: 1;
+    margin-top: 32px;
+    position: relative;
+  }
+  
+  .product-title{
+    width: 100%;
+  }
+  &-sub-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    width: 100%;
+    white-space: nowrap;
+    padding: 8px 16px;
+    background-color: white;
+    border-radius: 900px;
+    margin-bottom: 31px;
+    display: flex;
+    width: fit-content;
+  }
+  
+}
+
+.swiper.first-swiper,
+.swiper.second-swiper .swiper-slide {
+    padding: 32px;
+  }
+.sliders-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.slider-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.slider-link {
+  border-radius: 12px;
+  padding: 14px 16px;
+  gap: 8px;
+  opacity: 1;
+  background-color: #0F172A;
+  color: white;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.second-swiper-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  color: #fff;
+}
+
+.second-swiper-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-inline: 32px;
+  margin-top: 32px;
+}
+
+.swiper-timer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  
+  &-hours {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.timer-double-dot {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  color: #FFF;
+}
+.swiper-title-right{
+  display: flex;
+  gap: 8px;
+}
+.swiper-prev-btn{
+  padding: 15px 17px;
+  border-radius: 12px;
+  background-color: #F1F5F9;
+  transition: all .3s;
+  position: relative;
+  cursor: pointer;
+  width: 53px;
+  height: 50px;
+}
+.swiper-next-btn{
+  padding: 15px 17px;
+  border-radius: 12px;
+  background-color: #F1F5F9;
+  transition: all .3s;
+  cursor: pointer;
+  width: 53px;
+  height: 50px;
+}

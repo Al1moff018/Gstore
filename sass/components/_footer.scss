@@ -1,0 +1,60 @@
+/* Footer Styles */
+footer {
+  background-color: #0F172A;
+  color: #64748B;
+  margin-top: 56px;
+  
+  .footer-top {
+    display: flex;
+    padding: 53px 0 56px;
+    align-items: start;
+    gap: 32px;
+    
+    .gstore-date {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 110%;
+      color: #64748B;
+      padding-top: 24px;
+      display: inline-block;
+      width: fit-content;
+    }
+    
+    .foter-title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+      color: #fff;
+    }
+    
+    .footer-links-box {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    
+    .footer-link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 110%;
+      text-decoration: none;
+      color: #64748B;
+    }
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #334155;
+    padding-block: 16px;
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .footer-bottom-info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 110%;
+    }
+  }
+}

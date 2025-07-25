@@ -1,0 +1,36 @@
+/* Info Card Styles */
+.informations-box {
+  margin-top: 24px;
+  display: flex;
+  overflow: auto;
+  gap: 16px;
+}
+
+.info-card {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  width: 292px;
+  border-radius: 24px;
+  opacity: 1;
+  padding: 16px;
+  background-color: #F1F5F9;
+  
+  .info-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  
+  .info-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    opacity: 0.6;
+    padding-top: 8px;
+    width: 204px;
+    display: inline-block;
+    white-space: wrap;
+  }
+}
+
