@@ -9,7 +9,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
-  
   .products.all-products {
     grid-template-columns: repeat(minmax, auto-fit(280px, 1fr));
   }
@@ -315,5 +314,136 @@
     font-family: Arial, sans-serif;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 20px;
+  }
+}
+@media (max-width: 1200px) {
+    .korzina-box{
+      flex-direction: column;
+    }
+}
+@media (max-width: 1440px) {
+  .header__search {
+    width: 100%;
+  }
+  
+  .header-right {
+    gap: 24px;
+  }
+  
+  .product-content {
+    width: 100%;
+  }
+  
+  .product {
+    width: calc(33.333% - 16px);
+  }
+  
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+}
+@media (max-width: 1600px) {
+  .swiper.first-swiper,
+  .swiper.second-swiper {
+    width: 100% !important;
+  }
+  
+  .swiper-pagination {
+    left: 32px !important;
+    right: unset;
+    width: fit-content !important;
+  }
+  
+  .swiper.first-swiper,
+  .swiper.second-swiper .swiper-slide {
+    padding: 32px;
+  }
+  
+  .sliders-wrapper {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .slider-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .slider-link {
+    border-radius: 12px;
+    padding: 14px 16px;
+    gap: 8px;
+    opacity: 1;
+    background-color: #0F172A;
+    color: white;
+    text-decoration: none;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 1800px) {
+  .product-content {
+    width: 100%;
+  }
+  
+  .product {
+    width: calc(25% - 16px);
+  }
+  
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+  
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+@media (max-width: 2000px) {
+  .product-content {
+    width: 100%;
+  }
+  
+  .product {
+    width: calc(20% - 16px);
+  }
+  
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+  
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+@media (max-width: 840px) {
+  .product-price{
+    display: none;
+  }
+  .all-products-price{
+    display: none !important;
+  }
+  .korzina-card-content{
+    width: 100% !important;
+    align-items: start;
+    margin-left: 10px;
+  }
+  .all-products-action-box{
+    display: none !important;
+  }
+  .search-box{
+    width: 100% !important;
+    input{
+      width: 100%;
+    }
   }
 }

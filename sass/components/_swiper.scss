@@ -5,7 +5,7 @@
     height: 2px;
     border-radius: 900px;
     opacity: 0.4;
-    
+    background-color: #fff;
     &-active {
       opacity: 1;
       background-color: #fff;
@@ -15,9 +15,9 @@
   &-pagination {
     position: absolute;
     bottom: 17px;
-    left: 32px;
+    left: 32px !important;
     right: unset;
-    width: fit-content;
+    width: fit-content !important;
   }
   
   &.first-swiper {
