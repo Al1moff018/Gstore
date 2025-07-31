@@ -172,7 +172,7 @@ li {
   line-height: 110%;
   letter-spacing: 0%;
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 8px;
   border: 1px solid #E2E8F0;
   padding: 4px 9px 4px 14px;
@@ -513,7 +513,6 @@ footer .footer-bottom .footer-bottom-info {
   border-radius: 24px;
   padding: 24px;
   gap: 16px;
-  width: 384px;
 }
 .comment-card .user-name-box {
   display: flex;
@@ -1363,6 +1362,11 @@ footer .footer-bottom .footer-bottom-info {
   padding: 14px;
 }
 
+.all-products-actions img {
+  width: 16px;
+  height: 17px;
+}
+
 /* Info Card Styles */
 .informations-box {
   margin-top: 24px;
@@ -1375,7 +1379,6 @@ footer .footer-bottom .footer-bottom-info {
   display: flex;
   align-items: start;
   gap: 16px;
-  width: 292px;
   border-radius: 24px;
   opacity: 1;
   padding: 16px;
@@ -1640,7 +1643,7 @@ footer .footer-bottom .footer-bottom-info {
 .products.all-products {
   margin-top: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   row-gap: 32px;
   column-gap: 32px;
   padding: 40px 0;
